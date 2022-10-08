@@ -253,7 +253,9 @@ const makeDiffMessage = (option: MakeDiffMessageOption): string => {
     comment += removeEscapeCharacters(formattedDiff);
     comment += '\n```\n\n';
     comment += '</details>\n\n';
-
+    
+    comment += '<details>\n';
+    comment += `<summary>Resources</summary>\n\n`;
     // リソースの表
     if (enableDriftDetection) {
       comment += '|Diff|Drift|Type|Logical ID|\n';
@@ -320,6 +322,7 @@ const makeDiffMessage = (option: MakeDiffMessageOption): string => {
         comment += `|${diffMsg}|${type}|${logicalId}|\n`;
       }
     }
+    comment += '</details>\n\n';
     comment += '\n\n\n';
   }
 
