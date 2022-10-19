@@ -182,7 +182,7 @@ const makeDiffMessage = (option: MakeDiffMessageOption): string => {
     '> - 🈚 No Change\n' +
     '> - 🆕 New Resource\n' +
     '> - ✏️ Update Resource\n' +
-    '> - ♻️ Replace Reosurce (CFn recreate the resource)\n' +
+    '> - ♻️ Replace Resource (CFn recreate the resource)\n' +
     '> - 🗑 Logical Remove\n' +
     '> - 🔥 Destory Physical Resource\n' +
     '> \n' +
@@ -254,7 +254,6 @@ const makeDiffMessage = (option: MakeDiffMessageOption): string => {
     comment += removeEscapeCharacters(formattedDiff);
     comment += '\n```\n\n';
     comment += '</details>\n\n';
-    
     comment += '<details>\n';
     comment += `<summary>Diff Summary</summary>\n\n`;
     comment += '\n\n\n';
