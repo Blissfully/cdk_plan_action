@@ -255,7 +255,7 @@ const makeDiffMessage = (option: MakeDiffMessageOption): string => {
     comment += '</details>\n\n';
     
     comment += '<details>\n';
-    comment += `<summary>Resources</summary>\n\n`;
+    comment += `<summary>Diff Summary</summary>\n\n`;
     comment += '\n\n\n';
     // リソースの表
     if (enableDriftDetection) {
