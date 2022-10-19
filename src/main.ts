@@ -91,6 +91,7 @@ async function run(): Promise<void> {
   });
 
   if (replaceComments) await removeOldComment();
+  sh(`echo ${message}`);
   await postComment(message);
 }
 
