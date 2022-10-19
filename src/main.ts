@@ -256,6 +256,7 @@ const makeDiffMessage = (option: MakeDiffMessageOption): string => {
     
     comment += '<details>\n';
     comment += `<summary>Resources</summary>\n\n`;
+    comment += '\n\n\n';
     // リソースの表
     if (enableDriftDetection) {
       comment += '|Diff|Drift|Type|Logical ID|\n';
@@ -322,6 +323,7 @@ const makeDiffMessage = (option: MakeDiffMessageOption): string => {
         comment += `|${diffMsg}|${type}|${logicalId}|\n`;
       }
     }
+    comment += '\n\n\n';
     comment += '</details>\n\n';
     comment += '\n\n\n';
   }
