@@ -170,6 +170,7 @@ const makeDiffMessage = (option: MakeDiffMessageOption): string => {
   } = option;
 
   let comment = `${commentTitle}\n\n\n`;
+  comment += `[Blissfully/cdk_plan_action](https://github.com/Blissfully/cdk_plan_action)\n\n`;
   comment += '[View GitHub Action]';
   comment += `(${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID})\n\n`;
 
